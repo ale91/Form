@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semplice form di registrazione studente</title>
+
+    <link rel="stylesheet" href="stile.css">
+
+    <!-- 
+        Titolo: Form-Studente
+        Release: 0.1
+        Descrizione: Codice per la validazione dei campi obbligatori in una form registrazione studente.
+        Tecnologie utilizzate: HTML, CSS, Javascript, JQuery, PHP(non richiesto dalla
+        traccia)
+        File: form.html
+        Data: 15.03.2019
+        Lingua: it-IT
+        Autore: ale91
+     -->
+
+</head>
+<body style="padding: 10px;">
+
+    <header>
+    </header>
+
+    <p style="font-size: 15px;">Nota: lasciare almeno un campo vuoto e fare click sul pulsante "Invio".</p>
+    <div style="margin-top: 60px;">
+        <form method="post" id="formstudenti" action="xxx.php">
+            <h1>Modulo inserimento dati studente</h1>
+
+            <div class="campo-input">
+                <label for="nome">Nome (*)</label>
+                <input type="text" name="nome" id="nome" size="25" maxlength="25" class="required">                
+            </div>
+           
+            <div class="campo-input">
+                <label for="cognome">Cognome (*)</label>
+                <input type="text" name="cognome" id="cognome" size="30" maxlength="30" class="required">
+            </div>
+
+            <div class="campo-input">
+                <label for="matricola">Matricola (*)</label>
+                <input type="text" name="matricola" id="matricola" size="8" maxlength="8" placeholder="Es:00109150" class="required">
+            </div>
+
+            <div class="campo-input">
+                <label for="datadinascita">Data di nascita (*)</label>
+                <input type="date" name="datadinascita" id="datadinascita" class="required">
+            </div>
+
+            <div class="campo-input">
+                <label for="luogodinascita">Luogo di nascita (*)</label>
+                <select id="luogodinascita" name="luogodinascita" id="luogodinascita" class="required">
+                    <option value="default">Scegli una regione</option>
+                    <option value="valdaosta">Val d&rsquo;Aosta</option>
+                    <option value="piemonte">Piemonte</option>
+                    <option value="liguria">Liguria</option>
+                    <option value="lombardia">Lombardia</option>
+                    <option value="veneto">Veneto</option>
+                    <option value="trentino">Trentino Alto Adige</option>
+                    <option value="friuli">Friuli Venezia-Giulia</option>
+                    <option value="emilia">Emilia-Romagna</option>
+                    <option value="toscana">Toscana</option>
+                    <option value="marche">Marche</option>
+                    <option value="umbria">Umbria</option>
+                    <option value="lazio">Lazio</option>
+                    <option value="abruzzo">Abruzzo</option>
+                    <option value="molise">Molise</option>
+                    <option value="campania">Campania</option>
+                    <option value="basilicata">Basilicata</option>
+                    <option value="puglia">Puglia</option>
+                    <option value="calabria">Calabria</option>
+                    <option value="sicilia">Sicilia</option>
+                    <option value="sardegna">Sardegna</option>
+                </select>
+            </div>
+
+            <div class="campo-input">
+                <label for="email">email (*)</label>
+                <input type="email" name="email" id="email" size="30" maxlength="30" placeholder="Es:matricola@studenti.unimarconi.it" class="required">
+            </div>
+
+            <div class="btn-azione">
+                <button class="reset-btn">Annulla</button>
+                <button class="submit-btn">Invia</button>
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="validazione.js"></script>
+
+</html>

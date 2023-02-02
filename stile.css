@@ -1,0 +1,107 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffff;
+    padding: 10px;
+}
+
+.campo-input {
+    clear: both;
+    margin-bottom: 30px;
+    position: relative;
+    }
+
+form {
+    width: 350px;
+    padding: 20px;
+    color: #000000;
+    font-weight:normal;
+    background-color: #ccc;
+    border: solid 2px #e8521f;
+    border-radius: 5px;
+    margin: 10px auto auto auto;
+}
+    
+form h1 {
+    text-align: center;
+    margin-top: 0.25em;
+    font-size:18px;
+}
+
+form label {
+    font-size: 12px;
+    line-height: 18px;
+    width: 115px;
+    display: inline-block;
+    text-align: right;
+}
+
+form input {
+    height: 24px;
+    width: 210px;
+    margin-left: 5px;
+    padding-left: 7px;
+    background-color: #eee;
+    border: solid 1px #666;
+    border-radius:3px;
+}
+
+form input[type="date"] {
+    height: 24px;
+    width: 100px;
+    margin-left: 5px;
+    padding-left: 7px;
+    background-color: #eee;
+    border: solid 1px #666;
+    border-radius:3px;
+}
+
+form select {
+    height: 28px;
+    width: 220px;
+    margin-left: 5px;
+    padding-left: 7px;
+    background-color: #eee;
+    border: solid 1px #666;
+    border-radius:3px;
+}
+
+form input:hover {
+    background-color: #ddd;
+}
+
+form input:focus {
+    background-color: #fff;
+}
+
+.btn-azione {
+    text-align: right;
+}
+    
+.reset-btn {
+    background-color: #E8521F;
+    border: solid 1px #111;
+    border-radius: 4px;
+    color: #fff;
+    padding: 8px 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    border: solid 1px #111;
+    border-radius: 4px;
+    color: #fff;
+    padding: 8px 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.error-data {
+    color: red;
+    font-weight:bold;
+    font-size: 12px;
+    position: absolute;
+    bottom: -18px;
+    left: 30%;
+}
